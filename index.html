@@ -35,7 +35,7 @@
     const apiURL = "http://hasanadiguzel.com.tr/api/sondepremler";
 
     // Canlı deprem verilerini API'den al
-    fetch(apiURL)
+    fetch(apiURL, { method: "GET" })
       .then(response => response.json())
       .then(data => {
         const depremler = data.data
